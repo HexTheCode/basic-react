@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Producto from "./components/Producto";
+import Carrito from "./components/Carrito";
 
 function App() {
   // Listado de productos
@@ -13,6 +14,10 @@ function App() {
     { id: 4, nombre: "Camisa JSON", precio: 19.99 },
   ]);
 
+  // State para un carrito de compras
+
+  const [carrito, pushProductos] = useState([]);
+
   // Obtener fecha
   const date = new Date().getFullYear();
 
@@ -21,9 +26,16 @@ function App() {
       <Header title="MyDrugs" />
       <h1>Lista de productos</h1>
       {productos.map((producto) => (
-        <Producto key={producto.id} producto={producto} />
+        <Producto
+          key={producto.id}
+          producto={producto}
+          carrito={carrito}
+          pushProductos={pushProductos}
+          productos={productos}
+        />
       ))}
       <br></br>
+      <Carrito carrito={carrito} pushProductos={pushProductos} />
       <br></br>
       <Footer date={date} />
     </Fragment>
