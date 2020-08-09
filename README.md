@@ -1,5 +1,5 @@
 ## Deployment on Netlify
-You can visit the build version of the project at [Crap App](https://react-crap-app.netlify.app).
+You can visit the build version of project at [Crap App](https://react-crap-app.netlify.app).
 
 ## Available Scripts
 
