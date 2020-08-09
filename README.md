@@ -1,7 +1,5 @@
 ## Deployment on Netlify
-You can visit the build version of the project at [Crap App](https://react-crap-app.netlify.app)
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can visit the build version of the project at [Crap App](https://react-crap-app.netlify.app).
 
 ## Available Scripts
 
